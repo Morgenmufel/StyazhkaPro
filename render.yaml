@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: my-spring-service
+    env: java
+    buildCommand: ./mvnw package
+    startCommand: java -jar build/libs/SyazhkaPro-0.0.1-SNAPSHOT.jar
+    envVars:
+      - key: JAVA_VERSION
+        value: 21

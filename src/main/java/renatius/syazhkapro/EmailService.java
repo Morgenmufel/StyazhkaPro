@@ -15,7 +15,6 @@ public class EmailService {
         this.mailSender = mailSender;
     }
 
-    private final String EMAIL = "kola30503@gmail.com";
 
     public void sendRequestOnEmail(String phoneNumber, String contentMessage, int square, String toEmail) throws MessagingException {
         try {
