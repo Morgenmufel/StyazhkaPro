@@ -28,7 +28,7 @@ public class MainController {
         this.emailService = emailService;
     }
 
-    @GetMapping("/home")
+    @GetMapping("/")
     public String showHomePage(Model model){
         model.addAttribute("data", new Data());
         try {
