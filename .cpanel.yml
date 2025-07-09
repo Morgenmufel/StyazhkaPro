@@ -1,0 +1,7 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/polusuha/repositories/StyazhkaPro
+    - /bin/cpbackup-exclude $DEPLOYPATH
+    - /bin/rm -rf $DEPLOYPATH
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/cp -R ./ $DEPLOYPATH
