@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1063,23 +1063,7 @@
         </div>
       </div>
     </div>
-    <div class="contact-form">
-      <form th:action="@{/request}" th:object="${data}" method="post" >
-        <div class="form-group">
-          <label for="phone">Телефон</label>
-          <input th:field="*{phoneNumber}" type="tel" id="phone" name="phone" required>
-        </div>
-        <div class="form-group">
-          <label for="square">Площадь помещения (м2)</label>
-          <input th:field="*{square}" id="square" name="square" required></input>
-        </div>
-        <div class="form-group">
-          <label for="message">Сообщение</label>
-          <input th:field="*{contentMessage}" id="message" name="message" required></input>
-        </div>
-        <button type="submit" class="btn">Отправить</button>
-      </form>
-    </div>
+
   </div>
 </section>
 
